@@ -17,9 +17,9 @@ if __name__ == '__main__':
 	GPIO.setmode(GPIO.BOARD)
 
 	while True :
-    a=Read_from_arduino()
-    if a != "":
-        print(a)
-        with open(path,'w') as file:
-        	file.write(a)
-        GPIO.output(send_pin, GPIO.HIGH)
+	    a=Read_from_arduino()
+	    if a != "":
+	        print(a)
+	        with open(path,'w') as file:
+	        	file.write(a)
+	        GPIO.output(send_pin, GPIO.HIGH)
