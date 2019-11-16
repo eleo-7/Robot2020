@@ -20,6 +20,6 @@ if __name__ == '__main__':
 	    a=Read_from_arduino()
 	    if a != "":
 	        print(a)
-	        with open(path,'w') as file:
-	        	file.write(a)
-	        GPIO.output(send_pin, GPIO.HIGH)
+	        # with open(path,'w') as file:
+	        # 	file.write(a)
+	        # GPIO.output(send_pin, GPIO.HIGH)
