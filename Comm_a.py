@@ -3,7 +3,7 @@ import serial
 path = "/Documents/Robot-2020/from_a_to_pi.txt"
 
 try:
-    ser = serial.Serial('/dev/ttyACM0',9600)
+    ser = serial.Serial('/dev/ttyUSB0',9600)
 except:
     ser = serial.Serial('/dev/ttyACM1',9600)
 
