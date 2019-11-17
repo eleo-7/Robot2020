@@ -12,7 +12,7 @@ def Read_from_arduino():
 
 def Write_to_arduino(val):
 	val += ';'	
-	ser.wite(val.encode('utf-8'))
+	ser.write(val.encode('utf-8'))
 	delay(50)
 
 if __name__ == '__main__':
