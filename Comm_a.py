@@ -10,6 +10,10 @@ except:
 def Read_from_arduino():
 	return str(ser.readline())[2:-5]
 
+def Write_to_arduino(val):
+	ser.wite(val.encode('utf-8'))
+	delay(50)
+
 if __name__ == '__main__':
 	import RPi.GPIO as GPIO
 
