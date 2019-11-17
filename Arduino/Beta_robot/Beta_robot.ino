@@ -17,9 +17,11 @@ void loop() {
       char *str;
       int place = 0;
       while((str = strtok_r(p,";",&p)) != NULL){
-        Serial.println(str);
+        //Serial.println(str);
+        buf[place]=str;
         place ++;
       }
+      Serial.println(buf);
     }
   }
 }
