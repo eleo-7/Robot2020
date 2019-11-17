@@ -1,6 +1,7 @@
 String Data = "";
 bool Donnees_dispo = false;
 char recep_mot[] = "fonction;50;true";
+String cmds[2];
 
 void setup() {
   Serial.begin(9600);
@@ -18,10 +19,10 @@ void loop() {
       int place = 0;
       while((str = strtok_r(p,";",&p)) != NULL){
         //Serial.println(str);
-        buf[place]=str;
+        cmds[place]=str;
         place ++;
       }
-      Serial.println(buf);
+      
     }
   }
 }
