@@ -6,7 +6,7 @@ void Tout_droit(int Nb_pas,bool sens){
   digitalWrite(dirPin,sens); 
   digitalWrite(dirPin2,not sens);
 
-  for(int x = 0; x< Nb_pas; x++){
+  for(int x = 0; x<= Nb_pas; x++){
     digitalWrite(stepPin,HIGH); 
     digitalWrite(stepPin2,HIGH);
     delayMicroseconds(delai); 
