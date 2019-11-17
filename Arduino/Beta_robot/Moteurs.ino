@@ -13,6 +13,7 @@ void Tout_droit(int Nb_pas,bool sens){
     digitalWrite(stepPin,LOW);
     digitalWrite(stepPin2,LOW); 
     delayMicroseconds(delai); 
+    Serial.println(x);
   }
   
 }
