@@ -1,4 +1,5 @@
 import serial
+from delay import *
 
 path = "/home/pi/Documents/Robot-2020/from_a_to_pi.txt"
 
