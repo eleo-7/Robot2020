@@ -25,7 +25,7 @@ if __name__ == '__main__':
 		Write_to_arduino(input("rentrez msg "))
 		a=Read_from_arduino()
 		if a != "":
-	        print(a)
+			print(a)
 	        # with open(path,'w') as file:
 	        # 	file.write(a)
 	        # GPIO.output(send_pin, GPIO.HIGH)
