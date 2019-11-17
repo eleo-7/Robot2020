@@ -11,6 +11,7 @@ def Read_from_arduino():
 	return str(ser.readline())[2:-5]
 
 def Write_to_arduino(val):
+	val += ';'	
 	ser.wite(val.encode('utf-8'))
 	delay(50)
 
@@ -21,6 +22,7 @@ if __name__ == '__main__':
 	GPIO.setmode(GPIO.BOARD)
 
 	while True :
+		Write_to_arduino(input("rentrez msg "))
 	    a=Read_from_arduino()
 	    if a != "":
 	        print(a)
