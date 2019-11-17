@@ -23,7 +23,7 @@ if __name__ == '__main__':
 	GPIO.setmode(GPIO.BOARD)
 
 	while True :
-		Write_to_arduino(input("rentrez msg "))
+		#Write_to_arduino(input("rentrez msg "))
 		a=Read_from_arduino()
 		if a != "":
 			print(a)
