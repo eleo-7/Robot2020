@@ -9,4 +9,4 @@ def Tout_droit(mm,sens):#sens = Avant, not sens = arriere
 	Comm_a.Write_to_arduino(f"moteur ttd {nb_pas} {sens}")
 
 if __name__ == '__main__':
-	Tout_droit(5,true)
+	Tout_droit(5,True)
