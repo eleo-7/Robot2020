@@ -6,7 +6,7 @@ path = "/home/pi/Documents/Robot-2020/from_a_to_pi.txt"
 try:
     ser = serial.Serial('/dev/ttyUSB0',9600)
 except:
-    ser = serial.Serial('/dev/ttyACM1',9600)
+    ser = serial.Serial('/dev/ttyUSB1',9600)
 
 def Read_from_arduino():
 	return str(ser.readline())[2:-5]
