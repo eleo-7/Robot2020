@@ -1,4 +1,5 @@
 void Tout_droit(int Nb_pas,bool sens){
+  int delai = 1000;
   Serial.println("avance tout droit");
   Serial.println(Nb_pas);
   Serial.println(sens);

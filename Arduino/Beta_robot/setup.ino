@@ -9,7 +9,7 @@ void setup() {
   pinMode(MS2,OUTPUT);
   pinMode(MS3,OUTPUT);
 
-  digitalWrite(MS1,HIGH);
-  digitalWrite(MS2,HIGH);
-  digitalWrite(MS3,HIGH);
+  digitalWrite(MS1,LOW);
+  digitalWrite(MS2,LOW);
+  digitalWrite(MS3,LOW);
   }

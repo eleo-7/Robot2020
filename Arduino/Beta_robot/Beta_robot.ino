@@ -11,12 +11,12 @@ String cmds[2];
 /************************************************************
  ***********Connectiques*************************************
  **********************************************************/
+
 //Steppers
 const int stepPin = 3; 
 const int dirPin = 4;
 const int stepPin2 = 5; 
-const int dirPin2 = 6;
-int delai = 1000; 
+const int dirPin2 = 6; 
 int MS1 = 7;
 int MS2 = 8;
 int MS3 = 9;
