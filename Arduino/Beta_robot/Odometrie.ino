@@ -5,5 +5,5 @@ void Od_dr(){
   else {
     OdComptDr++;
   }
-  Serial.println(OdComptDr);
+  //Serial.println(OdComptDr);
 }
