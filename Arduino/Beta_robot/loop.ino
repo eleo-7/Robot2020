@@ -7,7 +7,7 @@ void loop() {
       Data.toCharArray(buf,sizeof(buf));
       char *p = buf;
       char *str;
-      int place = 0;
+      int place = 0;  
       while((str = strtok_r(p,";",&p)) != NULL){
         cmds[place]=str;
         place ++;
