@@ -5,5 +5,17 @@ void Od_dr(){
   else {
     OdComptDr++;
   }
-  Serial.println(OdComptDr);
+  Serial.print("Dr :");
+  Serial.println(OdComptDr); 
+}
+
+void Od_g(){
+  if (digitalRead(OdG_B) == HIGH){
+      OdComptG--;
+  }
+  else {
+    OdComptG++;
+  }
+  Serial.print("G :");
+  Serial.println(OdComptG); 
 }

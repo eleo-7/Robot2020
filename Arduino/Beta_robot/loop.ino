@@ -20,8 +20,4 @@ void loop() {
       }
     }
   }
-//  if (digitalRead(2)){
-//    Serial.println("1");
-//  }
-  //Serial.println(OdComptDr);
 }
