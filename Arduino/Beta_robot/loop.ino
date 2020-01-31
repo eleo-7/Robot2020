@@ -16,7 +16,7 @@ void loop() {
         Tout_droit(cmds[1].toInt(),cmds[2]=="True");
       }
       else if (cmds[0]=="rot"){
-        Tourner(cmds[1].toInt(),cmds[2]=="Left");
+        Tourner(cmds[1].toInt(),cmds[2]=="True");
       }
     }
   }
