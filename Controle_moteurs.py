@@ -4,7 +4,7 @@ import math
 
 perimetre_roue = 199.711044989 #mm
 nb_pas_1_tour = 1*200
-distance_entre_2_roues = 170 #mm
+distance_entre_2_roues = 165 #mm
 
 def Tout_droit(mm,sens):#sens = Avant, not sens = arriere
 	nb_pas = int((nb_pas_1_tour/perimetre_roue)*mm)
