@@ -17,10 +17,10 @@ def Write_to_arduino(val):
 	delay(50)
 
 if __name__ == '__main__':
-	import RPi.GPIO as GPIO
+	#import RPi.GPIO as GPIO
 
-	GPIO.setwarnings(False)
-	GPIO.setmode(GPIO.BOARD)
+	#GPIO.setwarnings(False)
+	#GPIO.setmode(GPIO.BOARD)
 
 	while True :
 		#Write_to_arduino(input("rentrez msg "))
