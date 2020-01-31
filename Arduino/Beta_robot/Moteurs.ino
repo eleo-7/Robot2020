@@ -5,7 +5,7 @@ void Tout_droit(int Nb_pas,bool sens){
   Serial.println(sens);
   
   digitalWrite(dirPin,sens); 
-  digitalWrite(dirPin2,not sens);
+  digitalWrite(dirPin2,sens);
 
   for(int x = 0; x<= Nb_pas; x++){
     digitalWrite(stepPin,HIGH); 
@@ -20,13 +20,13 @@ void Tout_droit(int Nb_pas,bool sens){
 }
 
 void Tourner(int Nb_pas,bool sens){
-  int delai = 1000;
+  int delai = 10000;
   Serial.println("Tourne");
   Serial.println(Nb_pas);
   Serial.println(sens);
   
   digitalWrite(dirPin,sens); 
-  digitalWrite(dirPin2,sens);
+  digitalWrite(dirPin2,not sens);
 
   for(int x = 0; x<= Nb_pas; x++){
     digitalWrite(stepPin,HIGH); 
