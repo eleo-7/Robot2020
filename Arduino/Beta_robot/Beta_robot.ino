@@ -9,9 +9,9 @@ char recep_mot[] = "fonction;50;true";
 String cmds[2];
 
 //Steppers
-const int stepPin = 10; 
+const int stepPin = 10; //gauche
 const int dirPin = 4;
-const int stepPin2 = 5; 
+const int stepPin2 = 5; //droite
 const int dirPin2 = 6; 
 int MS1 = 7;
 int MS2 = 8;
