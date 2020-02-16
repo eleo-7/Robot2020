@@ -1,8 +1,11 @@
 /************************************************************
  ***********Variables*************************************
  **********************************************************/
+// 
+int nbre_ticks_par_tour=200;  // résolution de la roue codeuse
+float circonference_codeuse=10;  // circonférence en cm
 
-//Reception et traitement du Serail 
+//Reception et traitement du Serial 
 String Data = "";
 bool Donnees_dispo = false;
 char recep_mot[] = "fonction;50;true";
@@ -27,4 +30,5 @@ const int OdG_A = digitalPinToInterrupt(3);
 const int OdG_B = 12;
 
 long OdComptG = 0;
+
 //void Od_dr();

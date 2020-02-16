@@ -38,3 +38,21 @@ void Tourner(int Nb_pas,bool sens){
     Serial.println(x);
   }
 }
+
+void Moteur_g (int Nb_pas,bool sens, int vitesse){
+int delai = 6000;
+ /* Serial.println("avance tout droit");
+  Serial.println(Nb_pas);
+  Serial.println(sens);
+  */
+  digitalWrite(dirPin,sens); 
+  
+  for(int x = 0; x<= Nb_pas; x++){
+    digitalWrite(stepPin,HIGH); 
+    delayMicroseconds(delai); 
+    digitalWrite(stepPin,LOW);
+    delayMicroseconds(delai); 
+  //  Serial.println(x);
+  }
+  
+}

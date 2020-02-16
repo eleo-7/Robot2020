@@ -12,10 +12,10 @@ void setup() {
   pinMode(OdDr_B,INPUT_PULLUP);
   pinMode(OdG_B,INPUT_PULLUP);
 
-  digitalWrite(MS1,LOW);
+  digitalWrite(MS1,LOW); //step moteur
   digitalWrite(MS2,LOW);
   digitalWrite(MS3,LOW);
 
-  //attachInterrupt(OdDr_A, Od_dr,RISING);
+  attachInterrupt(OdDr_A, Od_dr,RISING);
   //attachInterrupt(OdG_A, Od_g,RISING);
   }
