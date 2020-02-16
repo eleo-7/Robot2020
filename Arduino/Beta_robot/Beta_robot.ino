@@ -5,7 +5,7 @@
 int nbre_ticks_par_tour=400;  // résolution de la roue codeuse
 float circonference_codeuse=19.949;  // circonférence en cm
 
-float perimetre_roue = 21.3471220811; //cm
+float perimetre_roue = 21.3471220811; //cm.
 int nb_pas_1_tour = 1*200;
 
 //Reception et traitement du Serial 
