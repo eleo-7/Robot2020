@@ -16,6 +16,6 @@ void setup() {
   digitalWrite(MS2,LOW);
   digitalWrite(MS3,LOW);
 
-  attachInterrupt(OdDr_A, Od_dr,RISING);
-  //attachInterrupt(OdG_A, Od_g,RISING);
+  //attachInterrupt(OdDr_A, Od_dr,RISING);
+  attachInterrupt(OdG_A, Od_g,RISING);
   }

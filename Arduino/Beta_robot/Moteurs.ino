@@ -1,8 +1,5 @@
-void Tout_droit(int Nb_pas,bool sens){
+void Tout_droit(int Nb_pas,bool sens, int vitesse = 0){
   int delai = 6000;
-  Serial.println("avance tout droit");
-  Serial.println(Nb_pas);
-  Serial.println(sens);
   
   digitalWrite(dirPin,sens); 
   digitalWrite(dirPin2,not sens);
@@ -14,7 +11,6 @@ void Tout_droit(int Nb_pas,bool sens){
     digitalWrite(stepPin,LOW);
     digitalWrite(stepPin2,LOW); 
     delayMicroseconds(delai); 
-    Serial.println(x);
   }
   
 }
@@ -60,10 +56,15 @@ int delai = 6000;
 int Avance(int g,int d,int v){//cm,cm,m/s?
   bool sens_g = g>0;
   float etape = 0.1*g;
+  OdComptG = 0;
+  bool sens_d = d>0;
+  OdComptDr = 0;
   while(g>0){
     int pas = cm_to_step(etape);
-    Moteur_g(pas,sens_g);
+    Tout_droit(pas,sens_g);
     Serial.println(comp_tick_step(OdComptG,pas));
+    g = g-etape;
+    OdComptG = 0;
   }
   
 }

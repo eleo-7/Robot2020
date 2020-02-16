@@ -24,13 +24,13 @@ int MS2 = 8;
 int MS3 = 9;
 
 //Odometres
-const int OdDr_A = digitalPinToInterrupt(2);
-const int OdDr_B = 11;
+const int OdDr_A = digitalPinToInterrupt(3);
+const int OdDr_B = 12;
 
 long OdComptDr = 0;
 
-const int OdG_A = digitalPinToInterrupt(3);
-const int OdG_B = 12;
+const int OdG_A = digitalPinToInterrupt(2);
+const int OdG_B = 11;
 
 long OdComptG = 0;
 
