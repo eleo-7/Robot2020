@@ -2,8 +2,11 @@
  ***********Variables*************************************
  **********************************************************/
 // 
-int nbre_ticks_par_tour=200;  // résolution de la roue codeuse
-float circonference_codeuse=10;  // circonférence en cm
+int nbre_ticks_par_tour=400;  // résolution de la roue codeuse
+float circonference_codeuse=19.949;  // circonférence en cm
+
+float perimetre_roue = 21.3471220811; //cm
+int nb_pas_1_tour = 1*200;
 
 //Reception et traitement du Serial 
 String Data = "";
