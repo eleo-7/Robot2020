@@ -25,5 +25,11 @@ def avancer(g,d,sens):
     mot.Tout_droit(g,d)
     return(f"On avance de {g}cm,{d}cm")
 
+@app.route('/tourne/<int:deg>/int<sens>')#sens 1 = ccw, 0 = cw
+def tourner (deg,sens):
+	sens=bool(sens)
+	mot.Tourner(deg,sens)
+	return (f"On tourne de {deg} degres")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

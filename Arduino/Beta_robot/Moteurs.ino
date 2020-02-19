@@ -54,11 +54,12 @@ int delai = 6000;
 }
 
 int Avance(int g,int d,int ){//cm,cm,m/s?
-  Serial.println("avance de"+String(g)+String(d));
+  Serial.println("avance de "+String(g)+" "+String(d));
   bool sens_g = g>0;
-  float etape = 0.1*g;
-  OdComptG = 0;
   bool sens_d = d>0;
+  float etape = abs(0.1*g);
+  g = abs(g);
+  OdComptG = 0;
   OdComptDr = 0;
   while(g>0){
     int pas = cm_to_step(etape);
