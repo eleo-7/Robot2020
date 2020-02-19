@@ -25,11 +25,8 @@ def avancer(g,d,sens):
     mot.Tout_droit(g,d)
     return(f"On avance de {g}cm,{d}cm")
 
-@app.route('/hello')
-def test():
-	return "hello"
 
-@app.route('/tourne/<int:deg>/int<sens>')#sens 1 = ccw, 0 = cw
+@app.route('/tourne/<int:deg>/<int:sens>')#sens 1 = ccw, 0 = cw
 def tourner(deg,sens):
 	sens=bool(sens)
 	mot.Tourner(deg,sens)
