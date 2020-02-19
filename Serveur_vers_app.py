@@ -10,6 +10,7 @@ from flask import Flask,request,escape
 from flask import render_template
 import os 
 import random
+import Controle_moteurs as mot
 
 app=Flask(__name__)
 
@@ -21,7 +22,7 @@ def avancer(g,d,sens):
     if sens == 0:
         g=g*(-1)
         d=d*(-1)
-    #charge la fonction 'avance' qui existe deja et renvoie vers l'arduino
+        mot.Tout_droit(g,d)
     return(f"On avance de {g}cm,{d}cm")
 
 if __name__ == '__main__':

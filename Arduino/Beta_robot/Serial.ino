@@ -19,7 +19,7 @@ void serialEvent() {
         Tourner(cmds[1].toInt(),cmds[2]=="True");
       }
       else if (cmds[0]=="avance"){
-        Avance(cmds[1].toInt(),0,0);
+        Avance(cmds[1].toInt(),cmds[2].toInt(),0);
       }
     }
   Serial.println(Data);

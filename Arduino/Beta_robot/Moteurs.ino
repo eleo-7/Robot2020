@@ -53,7 +53,7 @@ int delai = 6000;
   
 }
 
-int Avance(int g,int d,int v){//cm,cm,m/s?
+int Avance(int g,int d,int ){//cm,cm,m/s?
   bool sens_g = g>0;
   float etape = 0.1*g;
   OdComptG = 0;
