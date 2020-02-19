@@ -22,7 +22,7 @@ def avancer(g,d,sens):
     if sens == 0:
         g=g*(-1)
         d=d*(-1)
-        mot.Tout_droit(g,d)
+    mot.Tout_droit(g,d)
     return(f"On avance de {g}cm,{d}cm")
 
 if __name__ == '__main__':
