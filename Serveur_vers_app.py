@@ -26,7 +26,7 @@ def avancer(g,d,sens):
     return(f"On avance de {g}cm,{d}cm")
 
 @app.route('/tourne/<int:deg>/int<sens>')#sens 1 = ccw, 0 = cw
-def tourner (deg,sens):
+def tourner(deg,sens):
 	sens=bool(sens)
 	mot.Tourner(deg,sens)
 	return (f"On tourne de {deg} degres")
