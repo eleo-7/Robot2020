@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
 	#GPIO.setwarnings(False)
 	#GPIO.setmode(GPIO.BOARD)
-	Write_to_arduino(input("cmd : "))
+	#Write_to_arduino(input("cmd : "))
 
 	while True :
 		#Write_to_arduino(input("rentrez msg "))
