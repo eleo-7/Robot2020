@@ -1,4 +1,5 @@
 import RPi.GPIO as GPIO
+import time
 
 fPWM = 50 #frequence du pwm
 
