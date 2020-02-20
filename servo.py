@@ -22,5 +22,5 @@ def servo_droit(deg):
 if __name__ == "__main__":
 	while True:
 		cmd = int(input())
-		if cmd <180 and cmd >0:
+		if cmd <=180 and cmd >0:
 			servo_droit(cmd)
