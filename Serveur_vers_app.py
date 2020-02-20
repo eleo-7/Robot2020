@@ -11,6 +11,7 @@ from flask import render_template
 import os 
 import random
 import Controle_moteurs as mot
+import servo as se
 
 app=Flask(__name__)
 
@@ -34,6 +35,11 @@ def tourner(deg,sens):
 		sens = False
 	mot.Tourner(deg,sens)
 	return (f"On tourne de {deg} degres")
+
+@app.route("/servo/<int:cot>/<int:deg>")
+def servo(cot,deg):
+	se.servo_droit(deg)
+	return (f"servo droit {deg}")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
