@@ -11,7 +11,7 @@ GPIO.setup(bras_droit, GPIO.OUT)
 
 pwmBras_droit = GPIO.PWM(bras_droit, fPWM)
 
-pwmBras_droit.start()
+pwmBras_droit.start(0)
 
 def servo_droit(deg):
 	pwmBras_droit.ChangeDutyCycle(float(deg / 180 * 12.5))
